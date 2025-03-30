@@ -53,7 +53,7 @@ const convertMs = ms => {
 
 const updateTimer = ms => {
   const { days, hours, minutes, seconds } = convertMs(ms);
-  daysValue.textContent = days;
+  daysValue.textContent = addLeadingZero(days);
   hoursValue.textContent = addLeadingZero(hours);
   minutesValue.textContent = addLeadingZero(minutes);
   secondsValue.textContent = addLeadingZero(seconds);
